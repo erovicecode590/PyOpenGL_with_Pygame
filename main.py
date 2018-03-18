@@ -12,10 +12,10 @@ import OpenGL
 import sys
 
 from pygame.locals import *
-from settings import *
-from objects import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
+from settings import *
+from objects import *
 
 class Game:
     def __init__(self):
