@@ -2,8 +2,8 @@ import pygame as pg
 
 from pygame.locals import *
 
-WIDTH   = 1024
-HEIGHT  = 768
+WIDTH   = 1280
+HEIGHT  = 720
 DISPLAY = (WIDTH, HEIGHT)
 
 FPS = 60
