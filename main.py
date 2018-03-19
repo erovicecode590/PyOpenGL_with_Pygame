@@ -23,7 +23,7 @@ class Game:
         self.running = True
         self.clock = pg.time.Clock()
         self.screen = pg.display.set_mode(DISPLAY, DOUBLEBUF|OPENGL)
-        gluPerspective(45, (DISPLAY[0]/DISPLAY[1]), 0.1, 50.0)
+        gluPerspective(Y_FOV_ANGLE, ASPECT_RATIO, Z_NEAR, Z_FAR)
         glTranslate(0.0, 0.0, -5)
 
     def run(self):
@@ -42,7 +42,7 @@ class Game:
                 self.running = False
 
     def update(self):
-        glRotatef(1, 3, 1, 1)
+        glRotatef(1, 1, 1, 1)
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
 
     def draw(self):
